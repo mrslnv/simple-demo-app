@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 import org.codehaus.jackson.annotate.JsonIgnore;
 
-//coverage
+//coverage123
 @SuppressWarnings("serial")
 @Entity
 @Table(name = "account")
