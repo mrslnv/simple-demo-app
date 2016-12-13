@@ -5,7 +5,7 @@ import javax.persistence.*;
 import org.codehaus.jackson.annotate.JsonIgnore;
 
 // about to implement story #1118
-//coverage  start to end
+//coverage  start to end defect 1819
 @SuppressWarnings("serial")
 @Entity
 @Table(name = "account")
