@@ -8,9 +8,9 @@ echo.  >> src\main\webapp\WEB-INF\web.xml
 echo.  >> src\test\java\training\account\AccountTest.java
 echo.  >> src\test\java\training\account\UserServiceTest.java 
 echo "defect" >> dummy.txt 
-git commit -am "defect #1101: fixing defect"
+git commit -am "defect #1042: fixing defect"
 echo "effect" >> dummy.txt 
-git commit -am "defect #1102: fixing error handling"
+git commit -am "defect #1044: fixing error handling"
 echo.  >> src\main\resources\spring-security-context.xml 
 echo.  >> src\main\resources\persistence.properties 
 echo.  >> src\main\resources\logback.xml 
@@ -22,12 +22,12 @@ echo "defect" >> dummy.txt
 git config --global --replace-all user.name "Marry Jonset"
 git config --global user.email "marry@et.com"
 
-git commit -am "defect #1103: fixing NPE"
+git commit -am "defect #1042: fixing NPE"
 echo "effect" >> dummy.txt 
 echo.  >> src\main\resources\spring-security-context.xml 
 echo.  >> src\main\resources\persistence.properties 
 echo.  >> src\main\resources\logback.xml 
-git commit -am "defect #1104: simple fix"
+git commit -am "defect #1044: simple fix"
 echo.  >> src\main\resources\spring-security-context.xml 
 echo.  >> src\main\resources\persistence.properties 
 echo.  >> src\main\resources\logback.xml 
@@ -75,7 +75,7 @@ echo.  >> src\test\java\training\account\UserServiceTest.java
 echo "story" >> dummy.txt 
 echo.  >> src\test\java\training\account\AccountTest.java
 echo.  >> src\test\java\training\account\UserServiceTest.java
-git commit -am "user story #1004: user can add more widgets"
+git commit -am "user story #1043: user can add more widgets"
 echo.  >> src\main\resources\spring-security-context.xml 
 echo.  >> src\main\resources\persistence.properties 
 echo.  >> src\main\resources\logback.xml 
@@ -85,7 +85,7 @@ echo.  >> src\test\java\training\account\UserServiceTest.java
 echo.  >> src\test\java\training\account\AccountTest.java
 echo.  >> src\test\java\training\account\UserServiceTest.java
 echo "sorry" >> dummy.txt
-git commit -am "user story #1006: improving user service"
+git commit -am "user story #1045: improving user service"
 echo.  >> src\main\resources\spring-security-context.xml 
 echo.  >> src\main\resources\persistence.properties 
 echo.  >> src\main\resources\logback.xml 
@@ -116,7 +116,7 @@ echo "story" >> dummy.txt
 echo.  >> src\main\resources\spring-security-context.xml 
 echo.  >> src\main\resources\persistence.properties 
 echo.  >> src\main\resources\logback.xml 
-git commit -am "user story #1120: refactor of loopback"
+git commit -am "user story #1043: refactor of loopback"
 echo.  >> src\main\resources\spring-security-context.xml 
 echo.  >> src\main\resources\persistence.properties 
 echo.  >> src\main\resources\logback.xml 
@@ -124,7 +124,7 @@ echo.  >> src\main\webapp\WEB-INF\web.xml
 echo.  >> src\test\java\training\account\AccountTest.java
 echo.  >> src\test\java\training\account\UserServiceTest.java 
 echo "sorry" >> dummy.txt 
-git commit -am "user story #1122: widget configuration"
+git commit -am "user story #1045: widget configuration"
 echo.  >> src\main\resources\spring-security-context.xml 
 echo.  >> src\main\resources\persistence.properties 
 echo.  >> src\main\resources\logback.xml 
