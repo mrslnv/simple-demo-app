@@ -1,6 +1,8 @@
 package training.common;
 
 
+import java.util.Date;
+
 public final class TestEnvHelper {
     public static final TestEnvHelper TEST_ENV_HELPER = new TestEnvHelper();
     private boolean successfulRun = false;
@@ -21,6 +23,13 @@ public final class TestEnvHelper {
     }
 
     public boolean successfulRun(){
+        long sleepTime = System.currentTimeMillis() / (1000 * 60);
+        sleepTime = sleepTime % 60;
+        try {
+            Thread.sleep(sleepTime*100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return successfulRun;
     }
 
