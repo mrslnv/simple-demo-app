@@ -52,6 +52,12 @@ public class UserServiceTest {
     }
 
     @Test
+    public void linkedToCommit() {
+        // arrange
+        assertTrue("Problem in UserServiceTest.java",false);
+    }
+
+    @Test
     public void shouldReturnUserDetails() {
         // arrange
         Account demoUser = new Account("user", "demo", "ROLE_USER");
