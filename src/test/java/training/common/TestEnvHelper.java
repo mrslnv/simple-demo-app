@@ -26,7 +26,7 @@ public final class TestEnvHelper {
         long sleepTime = System.currentTimeMillis() / (1000 * 60);
         sleepTime = sleepTime % 60;
         try {
-            Thread.sleep(sleepTime*100);
+            Thread.sleep(sleepTime*50);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
