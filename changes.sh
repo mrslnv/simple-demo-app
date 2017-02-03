@@ -8,9 +8,9 @@ echo  >> src/main/webapp/WEB-INF/web.xml
 echo  >> src/test/java/training/account/AccountTest.java
 echo  >> src/test/java/training/account/UserServiceTest.java 
 echo "defect" >> dummy.txt 
-git commit -am "defect #1042: fixing defect"
+git commit -am "defect #2116: fixing defect"
 echo "effect" >> dummy.txt 
-git commit -am "defect #1044: fixing error handling"
+git commit -am "defect #2117: fixing error handling"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
@@ -22,12 +22,12 @@ echo "defect" >> dummy.txt
 git config --global --replace-all user.name "Marry Jonset"
 git config --global user.email "marry@et.com"
 
-git commit -am "defect #1042: fixing NPE"
+git commit -am "defect #2118: fixing NPE"
 echo "effect" >> dummy.txt 
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
-git commit -am "defect #1044: simple fix"
+git commit -am "defect #2119: simple fix"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
@@ -75,7 +75,7 @@ echo  >> src/test/java/training/account/UserServiceTest.java
 echo "story" >> dummy.txt 
 echo  >> src/test/java/training/account/AccountTest.java
 echo  >> src/test/java/training/account/UserServiceTest.java
-git commit -am "user story #1043: user can add more widgets"
+git commit -am "user story #2113: user can add more widgets"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
@@ -85,7 +85,7 @@ echo  >> src/test/java/training/account/UserServiceTest.java
 echo  >> src/test/java/training/account/AccountTest.java
 echo  >> src/test/java/training/account/UserServiceTest.java
 echo "sorry" >> dummy.txt
-git commit -am "user story #1045: improving user service"
+git commit -am "user story #2114: improving user service"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
@@ -95,7 +95,7 @@ echo  >> src/test/java/training/account/UserServiceTest.java
 echo  >> src/test/java/training/account/AccountTest.java
 echo  >> src/test/java/training/account/UserServiceTest.java
 echo "story" >> dummy.txt
-git commit -am "user story #1118: adding acount check"
+git commit -am "user story #2115: adding acount check"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
