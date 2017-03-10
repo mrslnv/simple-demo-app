@@ -60,6 +60,24 @@ public class UserServiceTest {
         userService.loadUserByUsername("user");
     }
 
+    @Test
+    public void shouldReturnUserDetails(){
+        if(testEnvHelper.successfulRun())
+            return;
+//arrange
+        Account demoUser=new Account("user","demo","ROLE_USER");
+        when(accountRepositoryMock.findByUsername("user")).thenReturn(demoUser);
+
+//act
+        UserDetails userDetails=userService.loadUserByUsername("user");
+
+//assert
+        assertNotNull("UsersshouldhaveID",demoUser.getId());
+        assertEquals(demoUser.getUsername(),userDetails.getUsername());
+        assertEquals(demoUser.getPassword(),userDetails.getPassword());
+        assertTrue(hasAuthority(userDetails,demoUser.getRole()));
+    }
+
 
     @Test
     public void linkedToCommit() {
@@ -69,23 +87,6 @@ public class UserServiceTest {
         assertTrue("Problem in UserServiceTest.java",false);
     }
 
-    @Test
-    public void shouldReturnUserDetails() {
-        if (testEnvHelper.successfulRun())
-            return;
-        // arrange
-        Account demoUser = new Account("user", "demo", "ROLE_USER");
-        when(accountRepositoryMock.findByUsername("user")).thenReturn(demoUser);
-
-        // act
-        UserDetails userDetails = userService.loadUserByUsername("user");
-
-        // assert
-        assertNotNull("Users should have ID",demoUser.getId());
-        assertEquals(demoUser.getUsername(), userDetails.getUsername());
-        assertEquals(demoUser.getPassword(), userDetails.getPassword());
-        assertTrue(hasAuthority(userDetails, demoUser.getRole()));
-    }
 
     private boolean hasAuthority(UserDetails userDetails, String role) {
         Collection<? extends GrantedAuthority> authorities = userDetails.getAuthorities();
