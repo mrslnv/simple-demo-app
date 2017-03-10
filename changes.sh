@@ -19,8 +19,8 @@ echo  >> src/test/java/training/account/AccountTest.java
 echo  >> src/test/java/training/account/UserServiceTest.java 
 echo "defect" >> dummy.txt 
 
-git config --global --replace-all user.name "Marry Jonset"
-git config --global user.email "marry@et.com"
+git config --global --replace-all user.name "Miroslav Novak"
+git config --global user.email "miroslav.novak@hpe.com"
 
 git commit -am "defect #2118: fixing NPE"
 echo "effect" >> dummy.txt 
