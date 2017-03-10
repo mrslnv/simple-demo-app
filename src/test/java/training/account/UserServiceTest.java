@@ -72,7 +72,6 @@ public class UserServiceTest {
         UserDetails userDetails=userService.loadUserByUsername("user");
 
 //assert
-        assertNotNull("UsersshouldhaveID",demoUser.getId());
         assertEquals(demoUser.getUsername(),userDetails.getUsername());
         assertEquals(demoUser.getPassword(),userDetails.getPassword());
         assertTrue(hasAuthority(userDetails,demoUser.getRole()));
