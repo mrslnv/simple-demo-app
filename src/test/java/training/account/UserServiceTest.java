@@ -5,6 +5,8 @@ import static org.mockito.Matchers.*;
 import static org.mockito.Mockito.*;
 
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -58,6 +60,7 @@ public class UserServiceTest {
         userService.loadUserByUsername("user");
     }
 
+
     @Test
     public void linkedToCommit() {
         if (testEnvHelper.successfulRun())
@@ -78,6 +81,7 @@ public class UserServiceTest {
         UserDetails userDetails = userService.loadUserByUsername("user");
 
         // assert
+        assertNotNull("Users should have ID",demoUser.getId());
         assertEquals(demoUser.getUsername(), userDetails.getUsername());
         assertEquals(demoUser.getPassword(), userDetails.getPassword());
         assertTrue(hasAuthority(userDetails, demoUser.getRole()));
