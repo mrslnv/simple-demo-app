@@ -12,12 +12,14 @@ import org.codehaus.jackson.annotate.JsonIgnore;
 @NamedQueries(
         {
                 @NamedQuery(name = Account.FIND_BY_USERNAME, query = "select a from Account a where a.username = :username"),
-                @NamedQuery(name = Account.FIND_BY_ID, query = "select a from Account a where a.id = :id")
+                @NamedQuery(name = Account.FIND_BY_ID, query = "select a from Account a where a.id = :id"),
+                @NamedQuery(name = Account.FIND_WITH_PREF, query = "select a from Account a where a.id = :id")
         })
 public class Account implements java.io.Serializable {
 
     public static final String FIND_BY_USERNAME = "Account.findByUsername";
     public static final String FIND_BY_ID = "Account.findById";
+    public static final String FIND_WITH_PREF = "Account.findWithPref";
 
     @Id
     @GeneratedValue

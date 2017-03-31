@@ -7,6 +7,8 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import java.util.Map;
+
 @Repository
 @Transactional(readOnly = true)
 public class AccountRepository {
@@ -45,4 +47,17 @@ public class AccountRepository {
             return null;
         }
     }
+
+
+	public Account findWithPreferences(Map<String,String> preferences) {
+		try {
+			TypedQuery<Account> query = entityManager.createNamedQuery(Account.FIND_WITH_PREF, Account.class);
+			for (Map.Entry<String,String>  ent : preferences.entrySet()) {
+				query.setParameter("pref_"+ent.getKey(),ent.getValue());
+			}
+			return query.getSingleResult();
+		} catch (PersistenceException e) {
+			return null;
+		}
+	}
 }
