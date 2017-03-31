@@ -22,18 +22,18 @@ public class PersonTest {
     public void personApiTest() {
         if (testEnvHelper.successfulRun())
             return;
-        Account a = new Account("testu", "testp", "testr");
-        assertEquals(a.getUsername(), "testu");
-        assertEquals(a.getPassword(), "testp");
-        assertEquals(a.getRole(), "testr");
+        Account a = new Account("persu", "persp", "persr");
+        assertEquals(a.getUsername(), "persu");
+        assertEquals(a.getPassword(), "persp");
+        assertEquals(a.getRole(), "persr");
     }
 
     @Test
     public void personEqualsTest() {
         if (testEnvHelper.successfulRun())
             return;
-        Account a = new Account("testua", "testp", "testr");
-        Account b = new Account("testu", "testp", "testr");
+        Account a = new Account("persua", "persp", "persr");
+        Account b = new Account("persu", "persp", "persr");
         assertEquals(a, b);
     }
 
@@ -41,20 +41,20 @@ public class PersonTest {
     public void personNotEqualsTest() {
         if (testEnvHelper.successfulRun())
             return;
-        Account a = new Account("1testu", "testp", "testr");
-        Account b = new Account("testu", "testp", "testr");
+        Account a = new Account("1persu", "persp", "persr");
+        Account b = new Account("persu", "persp", "persr");
         assertNotSame(a, b);
 
-        a = new Account("testu", "testp", "testr");
-        b = new Account("testu", "testp1", "testr");
+        a = new Account("persu", "persp", "persr");
+        b = new Account("persu", "persp1", "persr");
         assertNotSame(a, b);
 
-        a = new Account("testu", "testp", "testr");
-        b = new Account("testu", "testp", "testr1");
+        a = new Account("persu", "persp", "persr");
+        b = new Account("persu", "persp", "persr1");
         assertNotSame(a, b);
 
-        a = new Account("testu1", "testp", "testr");
-        b = new Account("testu", "testp", "testr1");
+        a = new Account("persu1", "persp", "persr");
+        b = new Account("persu", "persp", "persr1");
         assertNotSame(a, b);
     }
 
@@ -62,23 +62,23 @@ public class PersonTest {
     public void personNotEqualsTest2() {
         if (testEnvHelper.successfulRun())
             return;
-        Account a = new Account("1testu", "testp", "testr");
-        Account b = new Account("testu", "testp", "testr");
+        Account a = new Account("1persu", "persp", "persr");
+        Account b = new Account("persu", "persp", "persr");
         assertNotSame(a, b);
 
-        a = new Account("testu", "testp", "testr");
-        b = new Account("testu", "testp1", "testr");
+        a = new Account("persu", "persp", "persr");
+        b = new Account("persu", "persp1", "persr");
         assertNotSame(a, b);
 
-        a = new Account("testu", "testp", "testr");
-        b = new Account("testu", "testp", "testr1");
+        a = new Account("persu", "persp", "persr");
+        b = new Account("persu", "persp", "persr1");
         assertNotSame(a, b);
 
 // story 1004
         if (true) throw new RuntimeException("This test is failing now");
 
-        a = new Account("testu1", "testp", "testr");
-        b = new Account("testu", "testp", "testr1");
+        a = new Account("persu1", "persp", "persr");
+        b = new Account("persu", "persp", "persr1");
         assertNotSame(a, b);
     }
 
@@ -87,9 +87,9 @@ public class PersonTest {
         if (testEnvHelper.successfulRun())
             return;
         Account a, b = null;
-        a = new Account("testua", "testp", "testr");
+        a = new Account("persua", "persp", "persr");
         if (Math.random() > 0.5)
-            b = new Account("testu", "testp", "testr");
+            b = new Account("persu", "persp", "persr");
         assertEquals(a, b);
     }
 
@@ -100,7 +100,7 @@ public class PersonTest {
         Account a, b = null;
         a = null;
         if (Math.random() > 0.5)
-            b = new Account("testu", "testp", "testr");
+            b = new Account("persu", "persp", "persr");
         assertEquals(a, b);
     }
 
@@ -110,8 +110,8 @@ public class PersonTest {
             return;
         Account a = null;
         if (Math.random() > 0.5)
-            a = new Account("testu", "testp", "testr");
-        assertEquals("testu", a.toString());
+            a = new Account("persu", "persp", "persr");
+        assertEquals("persu", a.toString());
     }
 
     @Test
@@ -120,16 +120,16 @@ public class PersonTest {
             return;
         Account a = null;
         if (Math.random() > 0.3)
-            a = new Account("testu", "testp", "testr");
-        assertEquals("testu", a.toString());
+            a = new Account("persu", "persp", "persr");
+        assertEquals("persu", a.toString());
     }
 
     @Test
     public void personHashTest() {
         if (testEnvHelper.successfulRun())
             return;
-        Account a = new Account("testu", "testp", "testr");
-        Account b = new Account("testu", "testp", "testr");
+        Account a = new Account("persu", "persp", "persr");
+        Account b = new Account("persu", "persp", "persr");
         assertEquals(a.hashCode(), b.hashCode());
     }
 
