@@ -8,9 +8,9 @@ echo  >> src/main/webapp/WEB-INF/web.xml
 echo  >> src/test/java/training/account/AccountTest.java
 echo  >> src/test/java/training/account/UserServiceTest.java 
 echo "defect" >> dummy.txt 
-git commit -am "defect #2116: fixing defect"
+git commit -am "defect #83009: fixing defect"
 echo "effect" >> dummy.txt 
-git commit -am "defect #2117: fixing error handling"
+git commit -am "defect #83011: fixing error handling"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
@@ -22,12 +22,12 @@ echo "defect" >> dummy.txt
 git config --global --replace-all user.name "Miroslav Novak"
 git config --global user.email "miroslav.novak@hpe.com"
 
-git commit -am "defect #2118: fixing NPE"
+git commit -am "defect #83013: fixing NPE"
 echo "effect" >> dummy.txt 
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
-git commit -am "defect #2119: simple fix"
+git commit -am "defect #83014: simple fix"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
@@ -38,7 +38,7 @@ echo "effect" >> dummy.txt
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
-git commit -am "defect #1104: fixing problem with permissions"
+git commit -am "defect #83013: fixing problem with permissions"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
@@ -49,7 +49,7 @@ echo "effect" >> dummy.txt
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
-git commit -am "defect #1105: fixing unstable connection"
+git commit -am "defect #83016: fixing unstable connection"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
@@ -60,7 +60,7 @@ echo "effect" >> dummy.txt
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
-git commit -am "defect #1105: problems with connection pool"
+git commit -am "defect #83019: problems with connection pool"
 
 
 git config --global --replace-all user.name "Eric Korsan"
@@ -75,7 +75,7 @@ echo  >> src/test/java/training/account/UserServiceTest.java
 echo "story" >> dummy.txt 
 echo  >> src/test/java/training/account/AccountTest.java
 echo  >> src/test/java/training/account/UserServiceTest.java
-git commit -am "user story #2113: user can add more widgets"
+git commit -am "user story #83010: user can add more widgets"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
@@ -85,7 +85,7 @@ echo  >> src/test/java/training/account/UserServiceTest.java
 echo  >> src/test/java/training/account/AccountTest.java
 echo  >> src/test/java/training/account/UserServiceTest.java
 echo "sorry" >> dummy.txt
-git commit -am "user story #2114: improving user service"
+git commit -am "user story #83012: improving user service"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
@@ -95,7 +95,7 @@ echo  >> src/test/java/training/account/UserServiceTest.java
 echo  >> src/test/java/training/account/AccountTest.java
 echo  >> src/test/java/training/account/UserServiceTest.java
 echo "story" >> dummy.txt
-git commit -am "user story #2115: adding acount check"
+git commit -am "user story #83015: adding acount check"
 echo  >> src/main/resources/spring-security-context.xml 
 echo  >> src/main/resources/persistence.properties 
 echo  >> src/main/resources/logback.xml 
@@ -105,7 +105,7 @@ echo  >> src/test/java/training/account/UserServiceTest.java
 echo  >> src/test/java/training/account/AccountTest.java
 echo  >> src/test/java/training/account/UserServiceTest.java
 echo "sorry" >> dummy.txt
-git commit -am "user story #1119: simplifying request hadnling"
+git commit -am "user story #83017: simplifying request hadnling"
 
 git config --global --replace-all user.name "Jim Hartric"
 git config --global user.email "jim@et.com"
